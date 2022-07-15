@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Movie Catalog</title>
+	
+		<link rel="icon" type="image/png" href="icon.png">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<script src="XMLtoJSON.js"></script>
+		
+		<script>
+
+			   let numberOfMovies = 0 
+
+			   function getMovies() 
+			   {
+			        
+					let xmlHttp = new XMLHttpRequest(); 
+
+					xmlHttp.open('GET', '/movies.xml')
+
+					xmlHttp.onreadystatechange = () => {
+						
+						if(xmlHttp.readyState == 4 && xmlHttp.status == 200) 
+							{
+							
+								let moviesXML = xmlHttp.responseText
+							
+								let parser = new DOMParser()
+							
+								moviesDOM = parser.parseFromString(moviesXML,'text/xml')
+
+								moviesJSON = xmlToJson(moviesDOM)
+
+								for(let i in moviesJSON['movies']['movie']) 
+								{
+									
+									let item = moviesJSON['movies']['movie'][i]
+
+									let divRow = document.createElement('div')
+									divRow.className = 'row'
+									divRow.id = 'parentMovieDivRow'
+
+									let divCol = document.createElement('div')
+									divCol.className = 'col'
+								
+									let p1 = document.createElement('p')
+									p1.innerHTML = '<strong>Title:</strong> ' + item['title']['#text']
+
+									let p2 = document.createElement('p')
+									p2.innerHTML = '<strong>Plot Summary:</strong> ' + item['plotSummary']['#text']
+
+									let movieGenre = ''
+
+									for (let g in item.movieGenre)
+									{
+				
+										if (movieGenre) 
+										{
+											movieGenre += ', ' 
+										}
+										movieGenre += item.movieGenre[g]['#text']
+									}
+
+									let p3 = document.createElement('p')
+									p3.innerHTML = '<strong>Movie Genres:</strong> ' + movieGenre 
+
+									let cast = ''
+
+									for (let e in item.cast.castMember)
+									{
+										if (cast) 
+										{
+											cast += ', ' 
+										}
+										cast += item.cast.castMember[e]['#text']
+									}
+									
+
+									let p4 = document.createElement('p')
+									p4.innerHTML = '<strong>Cast:</strong> ' + cast 
+
+									let p5 = document.createElement('p')
+									p5.innerHTML = '<strong>Release Date:</strong> ' + item.releaseDate['#text'] + ' (' + item.releaseDate['@attributes']['country']  + ')'
+									
+									let hr = document.createElement('hr')
+
+									divRow.appendChild(divCol)
+									divCol.appendChild(p1)
+									divCol.appendChild(p2)
+									divCol.appendChild(p3)
+									divCol.appendChild(p4)
+									divCol.appendChild(p5)
+
+									if (i < moviesJSON['movies']['movie'].length - 1) 
+									{ 
+										divCol.appendChild(hr)
+									}
+									
+									document.getElementById('catalog').appendChild(divRow) 
+
+									numberOfMovies += 1
+						
+								}
+						}
+					}
+
+					xmlHttp.send()
+					
+			    }
+
+				
+
+				function hideMovies()
+				{
+					for(i = 0; i < numberOfMovies; i++)
+					{
+						var row = document.getElementById("parentMovieDivRow")
+						row.parentNode.removeChild(row)
+					}
+					 
+				}
+		
+		</script>
+	
+
+	</head>
+	<body>
+		<nav class="navbar navbar-light bg-light mb-4">
+			<div class="container">
+				<div class="navbar-brand mb-0 h1">
+					<img src="logo.png">
+					<span id="projectTitle">Movie Catalog</span>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" id="catalog">
+			<div class="row mb-5">
+				<div class="col">
+					<button type="button" class="btn btn-success" onclick="getMovies()"><strong>SHOW MOVIES</strong></button>
+				    <button type="button" class="btn btn-success ml-2" onclick="hideMovies()"><strong>HIDE MOVIES</strong></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

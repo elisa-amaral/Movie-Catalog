@@ -1,0 +1,24 @@
+html 
+{
+    overflow-y: scroll;
+}
+
+p
+{
+    font-size: 1.1em;
+}
+hr
+{
+    border: none;
+    height: 2px !important ;
+    color: #00C851; 
+    background-color: #00C851;
+}
+
+#projectTitle
+{
+    font-size: 1.3em;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 5px;
+}

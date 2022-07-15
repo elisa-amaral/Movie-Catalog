@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<movies>
+    <movie id="1">
+        <title>The Emoji Movie</title>
+        <plotSummary>Textopolis is the city where smartphone users' favorite Emojis live and work. There, they all live according to a dream: to be added to human texts. Everyone is used to having only one facial expression - with the exception of Gene, who was born with a bug in his system, which allows him to change faces through a special filter. Determined to become a regular emoji like everyone else, he'll take a fantastic journey through the most popular mobile apps of this generation - and he'll make new friends along the way, of course.</plotSummary>
+        <movieGenre>Adventure</movieGenre>
+        <movieGenre>Comedy</movieGenre>
+        <cast>
+            <castMember>Tony Leondis</castMember>
+            <castMember>T.J. Miller</castMember>
+            <castMember>Patrick Stewart</castMember>
+            <castMember>James Corden</castMember>
+            <castMember>Anna Faris</castMember>
+            <castMember>Maya Rudolph</castMember>
+        </cast>
+        <releaseDate country='United States'>28 July 2017</releaseDate>
+    </movie>
+
+    <movie id="2">
+        <title>RED (Retired Extremely Dangerous)</title>
+        <plotSummary>Frank Moses is an ex-CIA agent, now retired, who tries to lead a normal life. He's interested in Sarah, who he talks to on the phone from time to time, even though they haven't met in person yet. Suddenly, Frank's house is attacked by CIA agents. Not knowing what is happening, he deduces that they will soon realize her connection with Sarah and he will look for her to protect her. To understand why he was attacked, Frank will need the help of his old teammates Joe, Marvin and Victoria, all also RED (Retired Extremely Dangerous).</plotSummary>
+        <movieGenre>Action</movieGenre>
+        <movieGenre>Suspense</movieGenre>
+        <cast>
+            <castMember>Bruce Willis</castMember>
+            <castMember>John Malkovich</castMember>
+            <castMember>Helen Mirren</castMember>
+            <castMember>Morgan Freeman</castMember>
+            <castMember>Mary-Louise Parker</castMember>
+            <castMember>Bryan Cox</castMember>
+        </cast>
+        <releaseDate country='Canada'>15 October 2010</releaseDate>
+    </movie>
+
+    <movie id="3">
+        <title>Titanic</title>
+        <plotSummary>Jack Dawson is a young adventurer who wins a ticket for the first voyage of the ocean liner Titanic at a gaming table. The Titanic is a luxurious and imposing ship, announced at the time as unsinkable, which is heading to the United States. Also on board is Rose DeWitt Bukater, the young bride of Caledon Hockley. Rose is unhappy with her life, as she feels suffocated by the mores of the elite and doesn't love Caledon. However, she needs to marry him to maintain the good name of the family, which is bankrupt. One day, desperate, Rose threatens to jump off the Titanic, but Jack manages to talk her out of the idea. Because of this, he is invited to dinner in first class, where he starts to become closer to Rose. Soon they fall in love, causing Caledon to rage. The situation gets even more complicated when the Titanic collides with an iceberg, causing something no one thought possible: the ship sinking.</plotSummary>
+        <movieGenre>Romance</movieGenre>
+        <movieGenre>Drama</movieGenre>
+        <cast>
+            <castMember>Kate Winslet</castMember>
+            <castMember>Leonardo DiCaprio</castMember>
+            <castMember>Billy Zane</castMember>
+            <castMember>Bill Paxton</castMember>
+            <castMember>Gloria Stuart</castMember>
+            <castMember>Frances Fisher</castMember>
+        </cast>
+        <releaseDate country='United States'>19 December 1997</releaseDate>
+    </movie>
+
+    <movie id="4">
+        <title>Ralph Breaks the Internet (Ralph vs Internet)</title>
+        <plotSummary>Ralph and Vanellope start another adventure. After the glorious victory in Litwak's Arcade, the duo travel to the World Wide Web, in the expansive and unknown universe of the Internet. Now their mission is to find a spare part to save Vanellope's Sugar Rush video game. In order to do that, they count on the help of the "citizens of the Internet" and Yesss, the soul behind "BuzzzTube", a famous website that sets trends.</plotSummary>
+        <movieGenre>Fantasy</movieGenre>
+        <movieGenre>Adventure</movieGenre>
+        <cast>
+            <castMember>Rich Moore</castMember>
+            <castMember>Gal Gadot</castMember>
+            <castMember>John C. Reilly</castMember>
+            <castMember>Jack McBrayer</castMember>
+            <castMember>Alan Tudyk</castMember>
+            <castMember>Jodi Benson</castMember>
+        </cast>
+        <releaseDate country='United Kingdom'>30 November 2018</releaseDate>
+    </movie>
+
+    <movie id="5">
+        <title>Back to the Future (1985)</title>
+        <plotSummary>A young man accidentally activates a time machine built by a scientist in a Delorean, returning to the 50s. There, he meets his mother who falls in love with him even before marrying his father, . Such a passion jeopardizes his very existence, as it would alter the entire future, forcing him to serve as Cupid for his parents.</plotSummary>
+        <movieGenre>Science Fiction</movieGenre>
+        <movieGenre>Fantasy</movieGenre>
+        <cast>
+            <castMember>Michael J. Fox</castMember>
+            <castMember>Christopher Lloyd</castMember>
+            <castMember>Lea Thompson</castMember>
+            <castMember>Chrispin Glover</castMember>
+            <castMember>Thomas F. Wilson</castMember>
+            <castMember>Eric Stoltz</castMember>
+        </cast>
+        <releaseDate country='United States'>July 3 1985</releaseDate>
+    </movie>
+
+    <movie id="6">
+        <title>Click</title>
+        <plotSummary>Michael Newman is married to Donna and they have two children. He has a hard time seeing his family, as he spends a lot of time in the architectural office where he works in order to get the attention of his boss. However, after entering a store with the intention of buying a new remote control for his home, he seems to have found a solution to his problem. That's because, upon arriving at the scene, he meets the eccentric employee Morty, and ends up buying an experimental remote control, with the promise of making his life easier. Michael soon discovers that the remote has other functions, such as muffling the sound of his dog's barking and also bringing forward the facts of his own life, which will change things forever, not necessarily for the better.</plotSummary>
+        <movieGenre>Science Fiction</movieGenre>
+        <movieGenre>Comedy</movieGenre>
+        <cast>
+            <castMember>Adam Sandler</castMember>
+            <castMember>Kate Beckinsale</castMember>
+            <castMember>Christopher Walken</castMember>
+            <castMember>Frank Coraci</castMember>
+            <castMember>Cameron Monaghan</castMember>
+            <castMember>Henry Winkler</castMember>
+        </cast>
+        <releaseDate country='France'>4 October 2006</releaseDate>
+    </movie>
+</movies>
