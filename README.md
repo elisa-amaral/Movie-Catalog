@@ -1,6 +1,6 @@
 # Movie Catalog 
 
-This project is a movie catalog with the purpose of implementing asynchronous requests with JavaScript and XMLHTTPRequest (AJAX). The movie list file is coded in XML.
+This project is a simple movie catalog created with the purpose of implementing asynchronous requests with JavaScript and XMLHTTPRequest (AJAX). The movie list file is coded in XML.
 
 ## Screenshot
 
