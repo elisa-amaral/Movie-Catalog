@@ -8,6 +8,8 @@ This project is a simple movie catalog created with the purpose of implementing 
 
 ## Technology Stack
 
+The project was built with:
+
 + JavaScript
 + AJAX
 + XML
